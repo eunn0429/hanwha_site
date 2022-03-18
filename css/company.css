@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.wrap{width: 1200px; margin: 0 auto; padding: 0 10px;}
+
+.titleBg{position: relative; width: 100%; height: 400px; background-image: url(../img/info/bg.jpg); background-size: cover; background-position: 50% 50%;}
+.titleBg p{position: absolute; display: block; padding-top: 230px; width: 100%; text-align: center; font-size: 24px; color: #fff; font-weight: 700;}
+
+.s_menu{margin-top: 20px;}
+.s_menu .wrap{text-align: right; font-size: 0;}
+.s_menu .wrap a{display: inline-block; font-size: 14px; color: #555; line-height: 1;}
+.s_menu .wrap a:nth-child(2){font-weight: 700;}
+.s_menu .wrap a:nth-child(2) span{margin: 0 8px;}
+
+
+#company .wrap{padding-top: 86px; padding-bottom: 100px;}
+#company .wrap .title{width: 100%; text-align: center; padding-bottom: 80px; font-family: 'Play', sans-serif;}
+#company .wrap .title span{display: block; font-size: 20px; color: #555; text-transform: uppercase; font-weight: 700;}
+#company .wrap .title p{display: block; font-size: 60px; color: #f47321;}
+
+#company .wrap .txt .bold{font-size: 16px; line-height: 1.6; padding-bottom: 20px; font-weight: 700;}
+#company .wrap .txt .nomal{font-size: 14px; color: #555; line-height: 1.8;}
+#company .wrap .txt .nomal p{display: block; padding-bottom: 20px;}
+
+#manage .wrap{}
+#manage .wrap .title{font-size: 22px; line-height: 1; color: #555; padding-bottom: 20px; background-image: url(../img/info/border_orange.png); background-repeat: no-repeat; background-position: left bottom;}
+#manage .wrap .bg:nth-child(1){background-image: url(../img/info/img01.png); background-position: 50% 50%; background-size: cover;}
+
+#manage .wrap ul{width: 100%; height: 480px; background-image: url(../img/info/img.png); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; margin: 80px 0;}
+#manage .wrap ul li{width: calc(100% / 3);}
+#manage .wrap ul li .txt{width: 260px; margin: 0 auto; text-align: center; color: #555; font-weight: 700;}
+#manage .wrap ul li .txt .tit{font-size: 30px;}
+#manage .wrap ul li .txt p{display: block; font-size: 18px; margin-top: 20px; margin-bottom: 10px;}
+
+
+#manage .wrap ul li .txt_b{width: 260px; margin: 0 auto; font-size: 14px; color: #888; text-align: center; line-height: 1.6;}
+
+
+@media (max-width:1040px){
+  .wrap{width: 90%;}
+  #manage .wrap ul{background-image: none; margin: 40px 0 100px;  height: 340px; align-items: flex-start;}
+  #manage .wrap ul li{height: 240px; background-position: 50% 50%; background-size: cover; position: relative;}
+  #manage .wrap ul li:nth-child(1){background-image: url(../img/info/img01.png);}
+  #manage .wrap ul li:nth-child(2){background-image: url(../img/info/img02.png);}
+  #manage .wrap ul li:nth-child(3){background-image: url(../img/info/img03.png);}
+  #manage .wrap ul li .txt{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+  #manage .wrap ul li .txt .tit{font-size: 24px;}
+  #manage .wrap ul li .txt p{font-size: 13px; margin-top: 10px; margin-bottom: 0;}
+
+  #manage .wrap ul li .txt_b{position: absolute; width: 90%; margin: 0 5%; top: 260px;}
+
+}
+
+@media (max-width:767px){
+  .titleBg{height: 300px;}
+  .titleBg p{padding-top: 180px; font-size: 18px;}
+  .s_menu{display: none;}
+  #manage .wrap ul{display: block; height: auto;}
+  #manage .wrap ul li{width: 100%; height: 310px; position: static; display: flex; flex-direction: column; justify-content: center;}
+  #manage .wrap ul li .txt{position: static; text-align: center; transform: translate(0, 0);}
+  #manage .wrap ul li .txt p{margin-top: 4px;}
+  #manage .wrap ul li .txt_b{position: static; width: 70%; margin: 20px 15% 0;}
+}
+
